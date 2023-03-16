@@ -1,0 +1,40 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("../Datasets/happiness_merged.csv")
+df.head()
+
+# define the columns of interest
+feature_cols = ["Happiness Score", 'Family',
+                "Freedom to make life choices","Positive affect",  "Economy (GDP per Capita)", 'Health (Life Expectancy)', 'Generosity',"Confidence in national government", "Negative affect"
+                , "Perceptions of corruption"]
+
+# select the columns and create a new dataframe
+df_corr = df[feature_cols].corr()
+
+# create a figure and axis object
+fig, ax = plt.subplots(figsize=(13, 10))
+
+# create the heatmap using imshow function
+im = ax.imshow(df_corr.values, cmap='Blues')
+
+# add title and axis labels
+ax.set_xticks(np.arange(len(feature_cols)))
+ax.set_yticks(np.arange(len(feature_cols)))
+ax.set_xticklabels(feature_cols, rotation=90,  fontsize=16,weight="bold")
+ax.set_yticklabels(feature_cols, fontsize=16,weight="bold")
+ax.set_title("Correlation Matrix", fontsize=20,weight="bold")
+
+# add the correlation values as text
+for i in range(len(feature_cols)):
+    for j in range(len(feature_cols)):
+        text = ax.text(j, i, round(df_corr.iloc[i, j], 2), ha="center", va="center", fontsize=19,weight="bold")
+
+# add colorbar
+cbar = ax.figure.colorbar(im, ax=ax)
+cbar.ax.tick_params(labelsize=16  )
+cbar.ax.set_ylabel("Correlation", rotation=-90, va="bottom", fontsize=16,weight="bold")
+
+# show the plot
+plt.show()
