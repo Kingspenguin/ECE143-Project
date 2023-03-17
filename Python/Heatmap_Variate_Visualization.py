@@ -8,6 +8,8 @@ from plotly.offline import iplot
 import plotly.express as px
 import folium
 
+df = pd.read_csv("../Datasets/happiness_merged.csv")
+df.head()
 
 data_2015=df.loc[df['year'] == 2015]
 data_2016=df.loc[df['year'] == 2016]
