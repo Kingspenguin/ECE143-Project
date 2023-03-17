@@ -37,10 +37,10 @@ fig = px.choropleth(happy,
                     color_continuous_scale=px.colors.sequential.Rainbow,
                     scope="world")
 # fig.show()
-fig.update_layout(geo_scope='world',
-#                               colorscale=True,
-                              title_text='Hapiness Scores in 2021 '
-                               )
+# fig.update_layout(geo_scope='world',
+# #                               colorscale=True,
+#                               title_text='Hapiness Scores in 2021 '
+#                                )
 
 
 happy =data_2015
@@ -59,9 +59,9 @@ fig = px.choropleth(happy,
                     color_continuous_scale=px.colors.sequential.Rainbow,
                     scope="world")
 # fig.show()
-fig.update_layout(geo_scope='world',
-#                               colorscale=True,
-                              title_text='Hapiness Scores in 2015 '
+# fig.update_layout(geo_scope='world',
+# #                               colorscale=True,
+#                               title_text='Hapiness Scores in 2015 '
                                )
 
 
