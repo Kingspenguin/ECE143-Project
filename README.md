@@ -1,14 +1,11 @@
-﻿# ECE143-Project
+﻿# ECE143-Project An Analysis of The World Happiness Report
  
  
 ### Dataset Links
 
-1. The World Happiness Report and life expectancy data: 
+The World Happiness Report: 
 (https://worldhappiness.report/ed/2020/#appendices-and-data )
 and  (https://www.kaggle.com/datasets/mathurinache/world-happiness-report)
-
-2. Social support dataset from the Organisation for Economic Co-operation and Development: https://data.oecd.org/healthrisk/social-support.htm
-
 
 ### File Structure
 
