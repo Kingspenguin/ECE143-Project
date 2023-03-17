@@ -32,18 +32,16 @@ and  (https://www.kaggle.com/datasets/mathurinache/world-happiness-report)
 5. Run jupyter notebook to see all the visualization and graphs created for the project.
 
 
-### Third-party Modules Used
+### Dependencies
 
-1. Numpy
-2. Pandas
-3. matplotlib.pyplot
-4. seaborn 
-5. plotly
-6. os
-7. csv
-8. folium
-9. geopandas 
-10. sklearn.preprocessing
+1. [numpy](https://numpy.org/)
+2. [pandas](https://pandas.pydata.org/)
+3. [matplotlib](https://matplotlib.org/)
+4. [seaborn](https://seaborn.pydata.org/)
+5. [plotly](https://plotly.com/)
+6. [folium](https://python-visualization.github.io/folium/)
+7. [geopandas](https://geopandas.org/en/stable/)
+8. [sklearn](https://scikit-learn.org/stable/)
 
 
 
