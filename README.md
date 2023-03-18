@@ -24,6 +24,9 @@ and  (https://www.kaggle.com/datasets/mathurinache/world-happiness-report)
 
 1. Run the 'Data Preparation.py' to create the 'Happiness_data_from_2015_to_2022.csv' file, which contains all merged happiness data from every year with all the necessary columns. 
     - It uses happiness score datasets from every year to create this file, which are all found in Datasets Folder.
+    ```
+    python Data Preparation.py
+    ```
 2. Then run the 'Dataset Merging For COVID.py' file, which uses the previously created file and 'mortality_data.xlsx' to create 'mortality_merged.csv' file. 
     - This new .csv file created is used for analyzing COVID and mortality rate data in relation to happiness score.
 3. Then run the 'COVID data analysis.py', which uses the previously to .csv files we created to make the 'COVID_Analysis_Dataset.csv'.
