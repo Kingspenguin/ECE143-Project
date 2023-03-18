@@ -37,6 +37,7 @@ pip install requirements.txt
     - Warning: The notebook folder contains newplot.png files. The only purpose of those images are to display them on github because fig.show was not displaying some of the graphs on github due to compatibilty issues. If downloaded on desktop all the codes work as intended and it works without the .png files
 
 ### File Structure
+
 ````sh
 .
 ├── README.md
@@ -45,6 +46,7 @@ pip install requirements.txt
 ├── Python
 ├── notebooks
 ```
+
 
 1. Dataset Folder: Contains all the .csv and .xslx files used for the purpose of the project.
     - Some of the files are downloaded from the links
