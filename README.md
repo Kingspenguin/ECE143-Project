@@ -38,17 +38,14 @@ pip install requirements.txt
 
 ### File Structure
 
-├── README.md                    
-├── requirements.txt              
-├── Datasets    		       
-├── final_presentation.pdf 
-├── Python
-  └── Data Preparation.py 
-  └── Dataset Merging for COVID.py  
-  └── COVID data analysis.py   	  
-└── notebooks               		       
-		└── Visualization final.ipynb   	   
-  
+ .
+ ├── Datasets                # Data csv files
+ ├── Python                  # Python files for EDA
+ ├── notebooks               # Visualization notebook
+ ├── final_presentation.pdf  # final class presentation
+ ├── requirements.txt
+ └── README.md
+ 
 1. Dataset Folder: Contains all the .csv and .xslx files used for the purpose of the project.
     - Some of the files are downloaded from the links
     - Some of the files were created during data preparation or data merging
