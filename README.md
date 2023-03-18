@@ -30,6 +30,7 @@ and  (https://www.kaggle.com/datasets/mathurinache/world-happiness-report)
     - This is the result of doing mathematical analysis on the .csv file and using this to create visualizations.
 4. After all the .csv file is created move them in the dataset folder and run all the visualization.py files to create the graphs
 5. Run jupyter notebook to see all the visualization and graphs created for the project.
+    - Warning: The notebook folder contains newplot.png files. The only purpose of those images are to display them on github because fig.show was not displaying some of the graphs on github due to compatibilty issues. If downloaded on desktop all the codes work as intended and it works without the .png files
 
 
 ### Dependencies
