@@ -1,24 +1,10 @@
-﻿# ECE143-Project An Analysis of The World Happiness Report
- 
- 
+﻿# ECE143-Project Group 4 An Analysis of The World Happiness Report
+
 ### Dataset Links
 
 The World Happiness Report: 
 (https://worldhappiness.report/ed/2020/#appendices-and-data )
 and  (https://www.kaggle.com/datasets/mathurinache/world-happiness-report)
-
-### File Structure
-
-1. Dataset Folder: Contains all the .csv and .xslx files used for the purpose of the project.
-    - Some of the files are downloaded from the links
-    - Some of the files were created during data preparation or data merging
-2. Python Folder: Contain all the .py files. Some files are solely for the use of data preparations and others are for visualization
-    - Data Preparation.py: Creates the 'Happiness_data_from_2015_to_2022.csv' file that we mainly use for analysis and creating visualization.
-    - Dataset Merging For COVID.py: Add mortality rates and COVID data to create the 'mortality_merged.csv' file.
-    - COVID data analysis.py: Performs mathematical analysis on the 'mortality_merged.csv' file to create the 'COVID_Analysis_Dataset.csv' file.
-    - Correlation Matrix Visualization.py: Creates the correlation matrix plot based on the .csv files we created.
-3. notebooks Folder: Contains the jupyter notebook with all the visualization used in the presentation.
-
 
 ### How to Run
 
@@ -47,12 +33,33 @@ pip install requirements.txt
     ```
     python COVID data analysis.py
     ```
-4. After all the .csv file is created move them in the dataset folder and run all the visualization.py files to create the graphs
-5. Run the [jupyter notebook](https://github.com/Kingspenguin/ECE143-Project/blob/main/notebooks/Visualization%20Final.ipynb) to see all the visualization and graphs created for the project.
+4. Finally, run the [jupyter notebook](https://github.com/Kingspenguin/ECE143-Project/blob/main/notebooks/Visualization%20Final.ipynb) to see all the visualization and graphs created for the project.
     - Warning: The notebook folder contains newplot.png files. The only purpose of those images are to display them on github because fig.show was not displaying some of the graphs on github due to compatibilty issues. If downloaded on desktop all the codes work as intended and it works without the .png files
 
+### File Structure
 
-### Dependencies
+├── README.md                    
+├── requirements.txt              
+├── Datasets    		       
+├── final_presentation.pdf 
+├── Python
+  └── Data Preparation.py 
+  └── Dataset Merging for COVID.py  
+  └── COVID data analysis.py   	  
+└── notebooks               		       
+		└── Visualization final.ipynb   	   
+  
+1. Dataset Folder: Contains all the .csv and .xslx files used for the purpose of the project.
+    - Some of the files are downloaded from the links
+    - Some of the files were created during data preparation or data merging
+2. Python Folder: Contain all the .py files. Some files are solely for the use of data preparations and others are for visualization
+    - Data Preparation.py: Creates the 'Happiness_data_from_2015_to_2022.csv' file that we mainly use for analysis and creating visualization.
+    - Dataset Merging For COVID.py: Add mortality rates and COVID data to create the 'mortality_merged.csv' file.
+    - COVID data analysis.py: Performs mathematical analysis on the 'mortality_merged.csv' file to create the 'COVID_Analysis_Dataset.csv' file.
+    - Correlation Matrix Visualization.py: Creates the correlation matrix plot based on the .csv files we created.
+3. notebooks Folder: Contains the jupyter notebook with all the visualization used in the presentation.
+
+### Third party modules used:
 
 1. [numpy](https://numpy.org/)
 2. [pandas](https://pandas.pydata.org/)
