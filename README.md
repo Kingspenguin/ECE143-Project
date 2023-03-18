@@ -38,7 +38,7 @@ pip install requirements.txt
 
 ### File Structure
 
-````sh
+```shell
 .
 ├── README.md
 ├── requirements.txt
