@@ -22,17 +22,33 @@ and  (https://www.kaggle.com/datasets/mathurinache/world-happiness-report)
 
 ### How to Run
 
+Clone the repository using 
+```
+git clone git@github.com:Kingspenguin/ECE143-Project.git
+```
+
+Install the dependencies:
+```
+pip install requirements.txt
+```
+
 1. Run the 'Data Preparation.py' to create the 'Happiness_data_from_2015_to_2022.csv' file, which contains all merged happiness data from every year with all the necessary columns. 
-    - It uses happiness score datasets from every year to create this file, which are all found in Datasets Folder.
+    - It uses happiness score datasets from every year to create this file, which are all found in [Datasets](https://github.com/Kingspenguin/ECE143-Project/tree/main/Datasets) Folder.
     ```
     python Data Preparation.py
     ```
 2. Then run the 'Dataset Merging For COVID.py' file, which uses the previously created file and 'mortality_data.xlsx' to create 'mortality_merged.csv' file. 
     - This new .csv file created is used for analyzing COVID and mortality rate data in relation to happiness score.
+    ```
+    python Dataset Merging For COVID.py
+    ```
 3. Then run the 'COVID data analysis.py', which uses the previously to .csv files we created to make the 'COVID_Analysis_Dataset.csv'.
     - This is the result of doing mathematical analysis on the .csv file and using this to create visualizations.
+    ```
+    python COVID data analysis.py
+    ```
 4. After all the .csv file is created move them in the dataset folder and run all the visualization.py files to create the graphs
-5. Run jupyter notebook to see all the visualization and graphs created for the project.
+5. Run the [jupyter notebook](https://github.com/Kingspenguin/ECE143-Project/blob/main/notebooks/Visualization%20Final.ipynb) to see all the visualization and graphs created for the project.
     - Warning: The notebook folder contains newplot.png files. The only purpose of those images are to display them on github because fig.show was not displaying some of the graphs on github due to compatibilty issues. If downloaded on desktop all the codes work as intended and it works without the .png files
 
 
