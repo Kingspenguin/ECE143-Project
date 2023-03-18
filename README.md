@@ -47,6 +47,7 @@ pip install requirements.txt
     - COVID data analysis.py: Performs mathematical analysis on the 'mortality_merged.csv' file to create the 'COVID_Analysis_Dataset.csv' file.
     - Correlation Matrix Visualization.py: Creates the correlation matrix plot based on the .csv files we created.
 3. notebooks Folder: Contains the jupyter notebook with all the visualization used in the presentation.
+4. final_presentation: Contains the final presentation slides 
 
 ### Third party modules used:
 
